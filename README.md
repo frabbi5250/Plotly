@@ -1,1 +1,2 @@
 # Plotly
+Plotly is significant in developing creativity with visualization using three main concepts: data, layout, and figure objects. The goal of this project was to create a  panel that includes demographic information and bacterial data through three charts: a bar chart that discusses the top 10 bacteria cultures, a bubble chart that discusses the amount of bacteria cultures per sample, and a gauge chart.
