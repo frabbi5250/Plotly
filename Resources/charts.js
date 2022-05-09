@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("https://raw.githubusercontent.com/ShaynaBee/Challenge-12/main/samples.json").then((data) => {
+  d3.json("https://github.com/frabbi5250/Plotly/blob/main/Resources/samples.json").then((data) => {
 
     var sampleNames = data.names;
 
@@ -33,7 +33,7 @@ function optionChanged(newSample) {
 
 // Demographics Panel 
 function buildMetadata(sample) {
-  d3.json("https://raw.githubusercontent.com/ShaynaBee/Challenge-12/main/samples.json").then((data) => {
+  d3.json("https://github.com/frabbi5250/Plotly/blob/main/Resources/samples.json").then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
@@ -56,8 +56,8 @@ function buildMetadata(sample) {
 
 // Create the buildCharts function.
 function buildCharts(sample) {
-  // Use d3.json to load and retrieve the https://raw.githubusercontent.com/ShaynaBee/Challenge-12/main/samples.json file 
-  d3.json("https://raw.githubusercontent.com/ShaynaBee/Challenge-12/main/samples.json").then((data) => {
+  // Use d3.json to load and retrieve the https://github.com/frabbi5250/Plotly/blob/main/Resources/samples.json file 
+  d3.json("https://github.com/frabbi5250/Plotly/blob/main/Resources/samples.json").then((data) => {
     console.log(data);
     // Create a variable that holds the samples array. 
     var samples = data.samples;
